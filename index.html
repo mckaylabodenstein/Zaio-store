@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Threads | Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">Urban Threads</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart</a>
+      <a href="admin.html">Admin</a>
+      <a href="login.html" id="authLink">Login</a>
+      <span id="userDisplay"></span>
+      <button id="themeToggle" class="nav-btn" type="button">🌙</button>
+      <button id="logoutBtn" class="nav-btn hidden" type="button">Logout</button>
+    </nav>
+  </header>
+
+  <section class="hero glass">
+    <div class="hero-content fade-in-up">
+      <p class="eyebrow">Streetwear. Style. Energy.</p>
+      <h2>Fresh streetwear for everyday confidence</h2>
+      <p>Explore hoodies, tees, sneakers and accessories made for modern urban style.</p>
+      <div class="hero-actions">
+        <a href="shop.html" class="btn">Shop Now</a>
+        <a href="admin.html" class="btn btn-outline">Admin Panel</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+      <div class="category-card fade-in-up">Hoodies</div>
+      <div class="category-card fade-in-up">T-shirts</div>
+      <div class="category-card fade-in-up">Sneakers</div>
+      <div class="category-card fade-in-up">Accessories</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Why Choose Urban Threads?</h2>
+    <div class="features-grid">
+      <div class="feature-card fade-in-up">
+        <h3>Modern Looks</h3>
+        <p>Trendy streetwear for young adults who want comfort and style.</p>
+      </div>
+      <div class="feature-card fade-in-up">
+        <h3>Dynamic Shopping</h3>
+        <p>Products load directly from Firebase Firestore in real time.</p>
+      </div>
+      <div class="feature-card fade-in-up">
+        <h3>Easy Cart</h3>
+        <p>Add items, change quantities, and see totals update instantly.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Urban Threads. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

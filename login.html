@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Threads | Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">Urban Threads</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart</a>
+      <a href="admin.html">Admin</a>
+      <a href="login.html" id="authLink">Login</a>
+      <span id="userDisplay"></span>
+      <button id="themeToggle" class="nav-btn" type="button">🌙</button>
+      <button id="logoutBtn" class="nav-btn hidden" type="button">Logout</button>
+    </nav>
+  </header>
+
+  <main class="auth-page">
+    <div class="auth-card glass fade-in-up">
+      <h2>Welcome Back</h2>
+      <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" required />
+        <input type="password" id="loginPassword" placeholder="Password" required minlength="6" />
+        <button type="submit" class="btn full-btn">Login</button>
+      </form>
+
+      <h2>Create Account</h2>
+      <form id="signupForm">
+        <input type="email" id="signupEmail" placeholder="Email" required />
+        <input type="password" id="signupPassword" placeholder="Password" required minlength="6" />
+        <button type="submit" class="btn full-btn">Sign Up</button>
+      </form>
+
+      <p id="authMessage" class="message-box"></p>
+    </div>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

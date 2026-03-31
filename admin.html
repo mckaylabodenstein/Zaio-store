@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Threads | Admin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">Urban Threads</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart</a>
+      <a href="admin.html">Admin</a>
+      <a href="login.html" id="authLink">Login</a>
+      <span id="userDisplay"></span>
+      <button id="themeToggle" class="nav-btn" type="button">🌙</button>
+      <button id="logoutBtn" class="nav-btn hidden" type="button">Logout</button>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="auth-card glass fade-in-up">
+      <h2>Admin Panel</h2>
+      <p class="admin-note">Only your admin email can use this page. Change the admin email inside <strong>app.js</strong>.</p>
+
+      <form id="adminProductForm">
+        <input type="text" id="adminName" placeholder="Product name" required />
+        <input type="number" id="adminPrice" placeholder="Price" step="0.01" required />
+        <input type="text" id="adminCategory" placeholder="Category" required />
+        <input type="text" id="adminDescription" placeholder="Description" required />
+        <input type="url" id="adminImageURL" placeholder="Image URL" required />
+        <button type="submit" class="btn full-btn">Add Product</button>
+      </form>
+
+      <p id="adminMessage" class="message-box"></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Urban Threads. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
