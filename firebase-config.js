@@ -3,13 +3,13 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-aut
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.firebasestorage.app",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
-  measurementId: "YOUR_MEASUREMENT_ID"
+  apiKey: "AIzaSyBsFMGqpd0ykkAA06gNTVtIBbioZVMIkmu",
+  authDomain: "urbanthreadsstore-b1b16.firebaseapp.com",
+  projectId: "urbanthreadsstore-b1b16",
+  storageBucket: "urbanthreadsstore-b1b16.firebasestorage.app",
+  messagingSenderId: "431050769185",
+  appId: "1:431050769185:web:712b7020fb84b4573e7460",
+  measurementId: "G-Z82PPSGXBv"
 };
 
 const app = initializeApp(firebaseConfig);

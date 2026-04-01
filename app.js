@@ -150,13 +150,16 @@ async function loadProducts() {
   if (!productContainer) return;
 
   try {
+    console.log("Loading products...");
     const querySnapshot = await getDocs(collection(db, "products"));
     allProducts = [];
 
     querySnapshot.forEach((docSnap) => {
+      console.log("Product found:", docSnap.id, docSnap.data());
       allProducts.push({ id: docSnap.id, ...docSnap.data() });
     });
 
+    console.log("Total products loaded:", allProducts.length);
     displayProducts(allProducts);
   } catch (error) {
     console.error("Product loading error:", error);
